@@ -1,0 +1,357 @@
+mkdir
+touch 
+vi filename
+ESC+:wq
+cat filename
+cd
+cd ..
+rm filename
+rm -rf filename/directory name
+ls
+
+cd D:/ to change for particular drive
+-------------------------------------
+
+
+
+read write execute
+
+
+Git and Github
+--------------
+git add
+git commit
+git push
+
+
+locally to create a file 
+vi hyd
+cat hyd
+ls hyd
+
+git add . (here dot represents current directory)
+
+git commit -m "just commited (here m stands for message)
+
+git status 
+
+
+what is push means
+------------------
+if you want to push your code from the local to remote use
+
+git push
+
+
+touch hyd
+
+git status
+
+git add .
+
+git status
+
+git commit -m "testing"
+
+git push 
+
+
+
+
+touch kochi
+
+git status
+
+git add .
+
+git status
+
+git commit -m "testing"
+
+git push 
+
+
+what is pull
+------------
+getting changes from remote to local
+
+now you can create a file name with "mumbai" and then follwing process
+
+git pull
+
+git status
+
+Unwantly I added one file now I want undo the changes so I would like to use
+----------------------------------------------------------------------------
+
+	git reset (will undo the changes)
+	
+	git status
+
+
+I want to add a file in temporary location
+------------------------------------------
+
+	touch kochi
+
+	git add .
+
+	git status
+	
+	git stash save (stash is a temporary location)
+	
+	git status
+
+
+	touch madhurai
+	
+	git add .
+
+	git status
+	
+	Now I want to back that kochi file so I am using
+	------------------------------------------------
+
+	git stash pop
+	
+	git status
+
+	git commit -m "Stash PoP application"
+
+I want to see how many branches are there.
+------------------------------------------
+
+git branch
+
+here the interview question.
+
+If I do git branch I am not able to see no. of branches so at that what I need to do.
+
+git branch -a 
+
+I want to checkout feature branch
+----------------------------------
+git checkout feature
+
+touch ameerpet
+
+git add .
+
+git commit -m "JustNow updated"
+
+git merge feature
+Alread up to date.
+
+you are in feature branch and merge the same branch.
+
+so for that purpose you want to merge one to another first you need to checkout of the branch.
+
+git checkout main
+
+git merge feature
+
+ls
+
+cat ameerpet
+
+touch kukatpally
+
+git add .
+
+git commit -m "Just Now Kukatpally file is added"
+
+ls
+
+git checkout main
+
+git merge feature
+
+------------------------------------------------------
+
+
+How to stop merging in git
+---------------------------
+git merge --abort
+# or
+git reset --merge
+
+
+
+Scanario -2
+-----------
+
+		In feature branch
+
+	1)touch vizag
+
+	2)ls
+	
+	3)git add .
+
+	4)ls
+
+	5)git commit -m "Vizag file added"
+	
+	6)git checkout main
+	
+	7)git merge feature
+
+	8)ls
+
+	9)git push         
+
+
+sometime I have requirement to push feature to feature branch
+--------------------------------------------------------------
+touch abc
+
+ls
+
+git add .
+
+git commit -m "Just Now abc file added"
+
+git push
+
+Merge conflicts
+---------------
+before use git pull 
+
+I created bbbbb file in feature branche remotely
+
+but I did not used git pull (bbbbb file not there in local system)
+
+I local system I created cccc
+-----------------------------
+	touch cccc
+	
+	git add .
+	
+	git commit -m "cccc file is added"
+	
+	if use "git push" is it work what you think.
+
+	if not work because in feature branch I created one new file bbbbb not pulled i.e., that file not in you local system.
+
+	here the conflict is happend.
+
+$ git push
+To https://github.com/rajeshkumar273/Kia.git
+ ! [rejected]        feature -> feature (fetch first)
+error: failed to push some refs to 'https://github.com/rajeshkumar273/Kia.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+that means conflict happend
+
+
+	
+git clone --> for  copy
+
+git pull --> is used to see changes from remote to local
+
+git push --> push code from local to remote
+
+git diff is used to compare the changes
+
+git log --> to get latest commit id's or how many commits we did.
+
+git config
+git init
+git clone
+git add
+git commit
+git diff
+git reset
+git status
+git rm
+git log
+git show
+git tag
+git branch
+git checkout
+git merge
+git remote
+git push
+git pull
+git stash
+
+
+
+why we are using brances
+
+	If there is any new requirement directly we will not be able to make changes into main branch.
+	
+	that's way we are creating new branches.
+	
+	
+
+
+I dont want to  pull the changes I just want see the changes.
+-------------------------------------------------------------
+git fetch vs pull
+
+Git Fetch is the command that tells the local repository 
+that there are changes available in the remote repository 
+without bringing the changes into the local repository.
+
+Git Pull on the other hand brings the copy of the remote directory changes into the local repository. 
+
+
+commit fcfaa8226cc845e0f166656b81db247117b8a11e
+
+git show
+-----------------------------------------------------------------------
+
+git pull
+
+git log
+--------
+
+	to history of file who added, who changed along with commit id's
+
+git show
+--------
+
+	what are new changes are added, deleted given by particular id.
+
+	git show fcfaa8226cc845e0f166656b81db247117b8a11e
+	
+git revert 
+----------
+
+	git revert f54db7f2f5a9b1581b88133c3b61dddf457f35e8
+
+	git revert is used to revert the changes that are previsouly added.
+
+like undo the changes
+---------------------
+	
+
+How many ways we can authenticate github
+
+	There are two ways
+		1.Username and password
+		2.Using Token Access
+
+Github is used for storing code
+
+what is the version control system?
+
+	Git is the version control system
+
+	Git is draw the all code changes
+
+Now we are going to use Azure DevOps
+
+Azure is also code storing
+--------------------------
+
+	dev.azure.com ----------------> azure devops
+	
+	portal.azure.com ----------------> azure administration/azure portal
+	

@@ -1,0 +1,487 @@
+1.DevOps Introduction
+2.Version Control System
+3. Need of VCS
+
+
+Typs of VCS
+
+1.Centralized VCS
+
+2. Distributed VCS
+
+GitHub
+
+Features of GitHub
+
+Branching,Merging,Pushing,Pulling Git Remote Repository
+
+Create a remote repository login on GitHub and configure Git credentials.
+
+Push the local repository to the remote Git repository on GitHub
+
+push the local repository to the remote Git repository on GitHub
+
+Use Git Commit (Commit to local repo) and Merge to merge changes into the original branch.
+
+Push the changes into the remote repository, delete the develop branch.
+
+
+//DevOps Introduction
+
+	-It is a culture to develope, release and maintain software application with higher quality and faster way.
+
+	DevOps = Developer(plan/code/build/test) + Operations(release/deploy/Monitor)
+
+		-Old Model - Water fall (1950 -1960) 
+		-Current Model - Agile Model 
+		-Combination of multiple sub model
+		-RUP (Rational unified process)
+		-ASD (Adaptive Software Development)
+		-SCRUM (Continuous delivery, continuous feedback) 
+			1. Less Development Time
+			2. Less Development Cost  
+			3. Client Satisfaction is High
+		
+	
+
+
+				//Devops + Agile Difference
+
+
+			- DevOps and Agile both support rapid application development.
+
+			DevOps = Dev(Plan/Code/build/Test) + Operations (release/deploy/monitor)
+			       = Completely based on automation
+			       = quality+speed
+
+			Agile =(Plan/Code/build/Test) + No operations
+
+				In Agile, separate team will responsible for Operations.
+			      = Deos not force automation
+			      = speed --
+
+
+//What are the main tools we should know as a DevOps Engineer
+
+		1. Version Control System
+		2. Build Tools
+		3. Configuration Management tool
+
+	Cloud Native Application = MicroService(SpringBoot) + Containarized (Docker) + Kubernets  + DevOps
+ 	
+
+
+// Version Control System
+
+	To maintain different versions of code we need VCS.
+
+	Overriden of the code should not happen.
+	
+	Paralle development is required.
+	
+	
+	
+
+	Tech / IT
+
+	Freelance => Module1(code)
+
+	Demo => Client suggest some changes
+	
+	Freelance => updated module1 (Code)
+
+	Demo => Client Suggest some changes
+
+	Freelance => updated module1 (code)
+
+	Demo  => client suggest some changes 
+
+	freelance => updated module1
+
+	Demo => client suggest some changes 
+
+Client may ask Day1 what you developed.
+
+
+//Benefits of Version Control System.
+
+	=> We have different version and we can choose any version based on client requirement.
+
+	=> For each version we can meaintain metadata about the code.
+	
+	=> Developer can share the code to peer developer.
+	
+	=> We can make access control to each Developer.
+
+
+Types of Version Control Systems.
+---------------------------------
+
+
+	A. Centralized VCS
+		=> Version Control happen only in one place.
+
+		=> CVS, SVN,
+
+	Limitation of Centralized VCS
+		
+		=> Total code stored at a single place.
+
+				=> Something wrong cause single point of failure.
+
+		=> All check out and commit operations performed.
+
+				over network -Low performance.
+		
+		=> Bigger Size - number of file increase.
+
+
+		
+	
+	B. Distributed VCS
+	
+		- All work place have local repository.
+
+		- All versions are maintained inside local reposity.
+
+		- Even network down the also repository available.
+
+		- all commit and check out is performed in the local repository.
+		
+		- No question of single point of failure.
+
+		Ex: - Git
+
+
+	//Git 
+
+	- It is a Distibuted Version Control System.
+
+	- Linux - Created By Linux Torvalds - 2005
+	
+	//Features of Git:
+	
+	- Open Source
+		
+		- release unde GPL (General Public License
+	-Scalable
+		-When number of users increase the Git can handle the situations
+	-Distributes
+
+	-Security 
+
+		-SHA (Security has a function)
+
+	
+	//Benefit of Git
+	----------------
+
+		- Save Time
+
+		- Offline Work
+
+		-Undo Mistake
+
+		-Track the changes.
+
+	//GitHub
+	--------
+		- It is a Git Repository Hosting Service
+
+		- https://github.com
+		
+		- web based graphical user interface.
+
+		- It hosts source code of your project.
+
+	//Features of GitHub
+	--------------------
+
+		- Collaboration
+		-Integrate issue and bug tracking
+		- Graphical representation of Brance
+		- Git repositories of Hosting
+		- Project management
+		- Time management.
+
+	Features of GitHub
+
+//Branching,Merging,Pushing,Pulling Git Remote Repository
+
+	-Create a remote repository 
+
+	-Push the local repository to the remote Git repository on GitHub
+
+	-push the local repository to the remote Git repository on GitHub
+
+	-Use Git Commit (Commit to local repo) and Merge to merge changes into the original branch.
+
+	-Push the changes into the remote repository, delete the develop branch.
+
+//Git Tool
+----------
+
+	- To explore the robust functionality of Git we use Git tools
+		Ex Git bash, Git GUI, gitk
+	
+	-Git tools provide the interface between machine and user.
+
+//Git bash
+----------
+
+ - It is used as Git command line for windows.
+
+
+Next:
+-----
+
+		Git Terminology
+		---------------
+		
+		-Branch
+		
+		-Checkout
+		
+		-Clone
+		
+		-master
+		
+		-merge
+		
+		-origin
+		
+		-push/pull
+	
+		-git flow
+
+		
+
+come to Git Bash
+----------------
+
+	create a one floder in c drive name with 'mygitcode'
+
+	
+	- c:\Users\A886895\mygitcode
+	
+	cd mygitcode
+	
+	/>$git init // tp create empty repository
+
+	/> git status
+
+	/> git add .
+	
+	/> git commit -m "class free code"
+
+
+	
+//clone the remote Git repository into local repository
+------------------------------------------------------------------
+
+	/>git clone https://github.com/rajeshkumar273/python.git
+
+
+//Push the local repository to the remote Git repository on Github.
+-------------------------------------------------------------------
+	/>git status
+	/>git add.
+	/>git commit -m "class free code"
+	/>git push origin main`
+
+
+	First He setup floder name and files
+	
+	cd microservices
+	git status
+	git add .
+
+	git add test/springboot-apigateway
+	
+	
+
+/> pwd
+
+/> cd mygitcode
+
+/> git init
+
+/> git clone https://github.com/rajeshkumar273/spring-mvc.git
+
+Here clone means copy of actual one 
+
+A clone is an object that is the exact duplicate or replica of another object with the same characteristics and properties.
+
+
+created new floder
+------------------
+
+pwd 
+
+cd msgitdemo
+
+git clone https://github.com/rajeshkumar273/spring-mvc.git
+
+cd spring-mvc
+
+git status
+
+git add.
+
+git commit -m "class free code"
+
+git push origin master
+	got error
+
+git push origin main
+
+-----------------------------
+
+So he tryied into new one 
+--------------------------
+
+/> git clone https://github.com/rajeshkumar273/spring-mvc.git
+
+/> cd python
+
+/>git status
+	
+	On branch master
+	
+	Your branch is up to date with 'origin/master'.
+
+	nothing to commit, working tree clean.
+/> git add .
+
+/> git commit -m "class free code"
+
+
+//create a new Git develop Branch to make file changes.
+-------------------------------------------------------
+
+In Python we have only two floders like test and app
+
+test 
+	spring-boot-api
+
+app 
+	demo
+
+/>git checkout -b develope
+
+/>git status 
+
+/>cd app
+
+/> cd..
+
+/>cd test
+
+/>cd..
+
+
+//Use Git Commit( commit to local repo) and Merge to merge changes into the original branch.
+
+	//commit the change to develop branch
+
+	/> git add app/ConfigContextDemo
+
+	/> git add test/WebApp4
+	
+	/> git commit -m "modification"
+	
+	/>git status
+
+//commit the change to develop branch
+-------------------------------------
+
+
+/>git add app/demo1
+
+/>git add test/springboot-apigateway
+
+/>git commit -m "modification"
+
+/>git status
+
+//push the develope branch to remote repository
+------------------------------------------------
+	
+	/>git push -u origin develop
+
+//check out the master branch
+------------------------------
+
+
+//merge the develop branch to master branch
+-------------------------------------------
+
+	/>git status
+
+	/>git checkout main
+	
+	/>git merge develop
+
+//Push the changes into the remote repository, delete develop branch
+--------------------------------------------------------------------
+
+/> git push origin main
+
+//delete the develop branch from remote repo
+
+/>git push -d origin develop
+
+//delete the develop from local repo
+
+/>git branch -d develop
+
+/>cd..
+
+/> mkdir demo
+
+/> cd demo
+
+/> git init
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+ 
+
+
+
+	
+
+ 
+
+	
