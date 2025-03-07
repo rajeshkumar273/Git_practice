@@ -145,6 +145,26 @@ $ git push : To push changes from git local repository to git central repository
 $ git rm : To remove file(s) from repository
 
 
+Remote Commands in Git:
+
+In Git terminology, a remote refers to a repository that is hosted on a server or a cloud platform like GitHub, GitLab, or Bitbucket, and it typically serves as a centralized location for collaborators to share code. It acts as a pointer or a link to the external repository where your local Git repository is connected.
+
+
+git remote add <name> <url>: Add a new remote repository.
+
+git remote add origin https://github.com/your-repo.git
+git push origin main
+
+git remote -v: View the list of remote repositories.
+
+git push <remote>: Push changes to the remote repository.
+
+git pull <remote>: Pull changes from the remote repository.
+
+git fetch <remote>: Fetch updates from the remote without merging them.
+				
+
+
 ==================================================
 Steps to push code to github central repository
 ==================================================
@@ -1044,5 +1064,94 @@ Note: DevOps team will decide Branching strategy for the project.
 
 5) DevOps team will clone git repo for build and deployment process
 
+Real time Interview Question
+----------------------------
 
-				
+1) How will you know in Git if a branch has been already merged into master?
+
+git branch --merged master  -- list branches merged into master
+
+git branch --no-merged
+
+or you can use the git merge-base command to find the latest common commit between the two branches. 
+
+2) How can you bring a new feature in the main branch?
+
+To bring a new feature in the main branch, you can use a command "git merge" or "git pull" command.
+
+3) I want delete branch both Locally and Remotely?
+
+	git branch -d <branch_name>
+4) Delete Remote Branch 
+
+You can delete a remote branch using 
+
+git push <remote_name> --delete <branch_name>
+
+5) Difference between git clone Vs git remote 
+
+Functionality:
+
+git clone is a one-time action for creating a local copy of a repository.
+
+git remote manages connections to remote repositories and is used throughout the repository's lifecycle.
+
+git clone <URL>   --> Creates a new repository. (Downloads the repository's content (files, history, branches, etc.).)
+
+git remote add 
+
+Purpose: Manages the connections to remote repositories.
+
+What It Does:
+
+Adds, removes, or displays remote repository URLs.
+
+Allows you to interact with remotes (e.g., fetch, pull, or push changes).
+
+Add a new remote:
+git remote add origin https://github.com/mothukuri/my-first-app.git
+
+View existing remotes:
+git remote -v
+
+push or pull changes:
+
+git push origin main
+git pull origin main
+
+6) How can you fix a broken commit?
+
+To fix any broken commit, you will use the command "git commit--amed". 
+
+By running this command, you can fix the broken commit messeage in the editor. 
+
+Git vs GitHub
+
+Git is a version control system, a tool to manage your souce code history.
+
+GitHub is a hosting service for Git repositories.
+
+7) How do you find a list of files that has changes in a particular commit?
+
+git diff
+
+
+8) one of your teammate delete the branch, How do you recover it?
+
+Check our the latest commit to this branch in the reflog using command like 
+git reflog
+
+and then check it out as a neew branch using command like
+
+git checkout -b branch_name
+
+
+
+
+
+
+
+
+
+
+
