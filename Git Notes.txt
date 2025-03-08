@@ -564,6 +564,38 @@ Whenever we are merging branches and whenever we are pulling latest code, there 
 What is a merge conflict - the problem, that we are facing when the same file and same line number having the change. 
 
 
+To produce this scanario, I changed first remote reposotry, and Locally I changed same file and same line( trying to push changes to remote without pull)
+==========================================================================================================================================================
+To https://github.com/rajeshkumar273/Local_Project.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/rajeshkumar273/Local_Project.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Now I am trying to do git pull command  
+======================================
+(People will be working on same file, they may be working on same lines also, we don't know --> When multiple developers are working same file and same line, git pull command will not be working) 
+
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 962 bytes | 26.00 KiB/s, done.
+From https://github.com/rajeshkumar273/Local_Project
+   fc58c46..b0d7365  main       -> origin/main
+Auto-merging f3
+CONFLICT (content): Merge conflict in f3
+Automatic merge failed; fix conflicts and then commit the result.
+
+Interview Question
+==================
+What are the problems that you faced in your project?
+
+When I am trying to push my code, it rejected my push because some changes pushed by my project team member from other location. Then I tried to take the latest code changes by using git pull command. Unfortunately my changes and that developer same class and same line number then I got conflict problem. 
 
 
 
