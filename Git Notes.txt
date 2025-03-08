@@ -610,7 +610,9 @@ My content is going to change.     (
 
 New Content is going to add in this file. 
 
-The above one is example Junk Code. 
+<The above one is example Junk Code. > 
+
+(or) By seeing commit history, we can understand who commited the code, I will go meeting with them, then have to discussion with them to understand whose code is correct. will decide and confirm final one. Interaction is required. 
 
 
 
