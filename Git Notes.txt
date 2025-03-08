@@ -597,6 +597,19 @@ What are the problems that you faced in your project?
 
 When I am trying to push my code, it rejected my push because some changes pushed by my project team member from other location. Then I tried to take the latest code changes by using git pull command. Unfortunately my changes and that developer same class and same line number then I got conflict problem. 
 
+<<<<<<< HEAD
+My content is going to change.     (
+=======
+New Content is going to add in this file. 
+>>>>>>> b0d73655a15e75ace6637bdc4cce36adc1fd7ec0
+
+
+How I resolve means, I will keep both lines of code. commit and push. 
+
+
+
+How to do revert 
+How to resolve the merge conflict.
 
 
 
