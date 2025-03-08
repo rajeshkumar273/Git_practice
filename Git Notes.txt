@@ -26,6 +26,21 @@ Advantages with Source code repository sofwares
 			        - When
 				- Why
 				- What
+How to revert t he changes in git 100% interveiw question?    (In batabase we can call rollback and in git or bitbucket call revert)
+=========================================================
+
+This is we can done in two ways?
+
+1. Whatever changes you done, again, change it previous version manullay and commit and push the changes. (If you remember what you did, one or two lines are there) 
+
+2.  If more files are there, we can go for "git log" command.
+
+copy latest commit id "ab11371600c65a12a7b6aa904d10a3ff61cce1cb"
+
+git revert ab11371600c65a12a7b6aa904d10a3ff61cce1cb
+
+git push (Check Git hub to latest changes)
+
 
 
 ==============
