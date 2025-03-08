@@ -174,7 +174,7 @@ git remote -v: View the list of remote repositories.
 
 git push <remote>: Push changes to the remote repository.
 
-git pull <remote>: Pull changes from the remote repository.
+git pull <remote>: Pull changes from the remote repository to Local repository.
 
 git fetch <remote>: Fetch updates from the remote without merging them.
 				
