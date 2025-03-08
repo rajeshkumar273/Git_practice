@@ -604,9 +604,17 @@ New Content is going to add in this file.
 >>>>>>> b0d73655a15e75ace6637bdc4cce36adc1fd7ec0
 
 
-How I resolve means, I will keep both lines of code. commit and push. 
+How I resolve means, while removing junk code, commit the code and push it. 
+
+My content is going to change.     (
+
+New Content is going to add in this file. 
+
+The above one is example Junk Code. 
 
 
+
+I will keep both lines of code. commit and push. 
 
 How to do revert 
 How to resolve the merge conflict.
